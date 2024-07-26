@@ -98,6 +98,9 @@ header{
     {
         flex-direction: column;
     }
+    .navbar ul{
+        padding: 0;
+    }
     .banner_container{
         flex-direction: column-reverse;
     }
@@ -118,9 +121,12 @@ header{
     .banner_img_container{
         display: flex;
         justify-content: center;
+        height: auto;
+        background-size: 95%;
     }
     .banner_img{
-        width: 90%;
+        width: 80%;
+        padding: 15%;
     }
     .sponsor{
         display: flex;
