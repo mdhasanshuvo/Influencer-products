@@ -85,11 +85,87 @@ header{
 .sponsor{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.182);
     max-width: 1140px;
-    margin: 2px auto 1010px;
+    margin: 100px auto ;
     display: flex;
     justify-content: space-evenly;
     padding: 35px 0;
 }
+
+/* Collection section related styles */
+
+.collection{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.collection h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3A3A3A;
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+}
+.card{
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.card>img{
+    margin: 15px;
+    margin-left: 0;
+    width: calc(100% - 15px);
+}
+.card_title{
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin: 0;
+}
+.card_price{
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+.rating_container{
+    align-items: center;
+    height: 32px;
+}
+.card_rating_img{
+    height: 20px;
+    width: 20px;
+}
+.card_rating{
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #5E6366;
+}
+.card_details{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #89899adb;
+    margin-bottom: 27px;
+    width: 210px;
+}
+.see_more{
+    justify-content: end;
+    gap:8px;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+.see_more a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #E02C6D;
+}
+.see_more img{
+    height: 14px;
+}
+
 
 /* responsive for mobile*/
 @media screen and (max-width:576px) {
@@ -138,5 +214,11 @@ header{
     }
     .sponsor img{
         width: 16%;
+    }
+
+    .card_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
     }
 }
